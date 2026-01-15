@@ -1,0 +1,244 @@
+/* ======================
+   RESET & BASE
+   ====================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4cc3b4, #6b5fa7);
+    color: white;
+}
+
+/* ======================
+   PROFILE
+   ====================== */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    padding: 35px;
+}
+
+.profile img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.6);
+}
+
+.profile-text h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.profile-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.95;
+}
+
+
+/* ======================
+   HEADER
+   ====================== */
+header {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ======================
+   SECTIONS
+   ====================== */
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 90px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: white;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ======================
+   GLASS CARD STYLE
+   ====================== */
+.about,
+.skills,
+.projects,
+.contact,
+.project {
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+/* ======================
+   ABOUT
+   ====================== */
+.about p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* ======================
+   SKILLS
+   ====================== */
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills ul li {
+    background: rgba(255, 255, 255, 0.35);
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ======================
+   PROJECTS
+   ====================== */
+.project h3 {
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+/* ======================
+   CONTACT
+   ====================== */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+/* Contact buttons layout */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Buttons base */
+.contact-links a {
+    padding: 14px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    min-width: 160px;
+    text-align: center;
+}
+
+/* Button colors */
+.facebook-link {
+    background-color: #1877f2;
+}
+
+.gmail-link {
+    background-color: #d44638;
+}
+
+.github-link {
+    background-color: #24292e;
+}
+
+.contact-links a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ======================
+   FOOTER
+   ====================== */
+footer {
+    background: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* ======================
+   RESPONSIVE
+   ====================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 60px 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-links a {
+        width: 100%;
+    }
+}
